@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/helloTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/clickMeBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click me!"
+        app:layout_constraintEnd_toEndOf="@id/helloTv"
+        app:layout_constraintStart_toStartOf="@id/helloTv"
+        app:layout_constraintTop_toBottomOf="@id/helloTv" />
+
+    <Button
+        android:id="@+id/clickMePlsBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click me, please!"
+        app:layout_constraintEnd_toEndOf="@id/clickMeBtn"
+        app:layout_constraintStart_toStartOf="@id/clickMeBtn"
+        app:layout_constraintTop_toBottomOf="@id/clickMeBtn" />
+
+    <Button
+        android:id="@+id/clickMeTooBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click me too!"
+        app:layout_constraintEnd_toEndOf="@id/clickMePlsBtn"
+        app:layout_constraintStart_toStartOf="@id/clickMePlsBtn"
+        app:layout_constraintTop_toBottomOf="@id/clickMePlsBtn" />
+
+    <Button
+        android:id="@+id/clickAndMeBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click and me!"
+        app:layout_constraintEnd_toEndOf="@id/clickMeTooBtn"
+        app:layout_constraintStart_toStartOf="@id/clickMeTooBtn"
+        app:layout_constraintTop_toBottomOf="@id/clickMeTooBtn" />
+
+    <Button
+        android:id="@+id/clickCapsBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CLICK!"
+        app:layout_constraintEnd_toEndOf="@id/clickAndMeBtn"
+        app:layout_constraintStart_toStartOf="@id/clickAndMeBtn"
+        app:layout_constraintTop_toBottomOf="@id/clickAndMeBtn" />
+
+    <Button
+        android:id="@+id/smileBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="O_o"
+        app:layout_constraintEnd_toEndOf="@id/clickCapsBtn"
+        app:layout_constraintStart_toStartOf="@id/clickCapsBtn"
+        app:layout_constraintTop_toBottomOf="@id/clickCapsBtn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
